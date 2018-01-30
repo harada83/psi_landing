@@ -1,0 +1,57 @@
+  	// Extra small devices (portrait phones, less than 576px)
+	// No media query since this is the default in Bootstrap
+
+	// Small devices (landscape phones, 576px and up)
+	@media (min-width: 576px) { ... }
+
+	// Medium devices (tablets, 768px and up)
+	@media (min-width: 768px) { ... }
+
+	// Large devices (desktops, 992px and up)
+	@media (min-width: 992px) { ... }
+
+	// Extra large devices (large desktops, 1200px and up)
+	@media (min-width: 1200px) { ... }
+body {
+	font-family: 'Open Sans Condensed', sans-serif;
+	line-height: 1.5;
+}
+.container-fluid {
+	background: url("../img/bat4landing.jpg") 100% 100% no-repeat;
+	background-size: cover;
+	padding-bottom: 10%;
+	height: 100vh;	
+	/*font-family: 'Open Sans', sans-serif;*/
+	/*font-family: 'Open Sans Condensed', sans-serif;*/
+	color: #fff;
+	font-size: 3.5em;
+	padding: 0;
+}
+.title {
+	background: url("../img/imgpsh_fullsize.png") 100% no-repeat;
+	margin: 25% 0% 0% 20%;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	/*margin-top: 20%; */
+	
+	
+}
+.text {
+	padding: 2% 9%;
+}	
+.description {
+	color: #2c9d6f;
+	font-size: 2em;
+	text-align: center;
+}
+#foto {
+	
+}
+#self {
+	font-size: 2em;
+	color: #2c9d6f;
+	font-style: italic;
+	display: flex;
+    align-items: flex-end;
+}
