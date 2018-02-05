@@ -12,11 +12,13 @@
 
 	// Extra large devices (large desktops, 1200px and up)
 	@media (min-width: 1200px) { ... }
+
+	@import url("http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
 body {
 	font-family: 'Open Sans Condensed', sans-serif;
 	line-height: 1.5;
 }
-.container-fluid {
+.top {
 	background: url("../img/bat4landing.jpg") 100% 100% no-repeat;
 	background-size: cover;
 	padding-bottom: 10%;
@@ -46,7 +48,12 @@ body {
 	text-align: center;
 }
 #foto {
-	
+	/*width: 200px;*/
+	height: 500px;
+	display: block;
+	border-radius: 250px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
 }
 #self {
 	font-size: 2em;
@@ -55,3 +62,170 @@ body {
 	display: flex;
     align-items: flex-end;
 }
+
+.otstup {
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+#ttt {
+	display: block;
+	margin: 0 auto;
+	font-size: 48pt;
+}
+.white{
+	color: white;
+	font-size: 20pt;
+	border-radius: 10px;
+	
+}
+#first {
+	background-color: #cdd065;
+	margin: 1%;
+}
+#second {
+	background-color: #bba341;
+	margin: 1%;
+}
+#third {
+	background-color: #6caa45;
+	margin: 1%;
+}
+#four {
+	background-color: #96b289;
+	padding: 0 10%;
+}
+#otzyv {
+	font-style: italic;
+	font-size: 48pt;
+}
+.name {
+	font-style: italic;
+	border-radius: 10px 10px 0 0;
+	background-color: #6da18b;
+	text-align: left;
+	width: 300px;
+}
+
+.footer {
+	background-color: #4e9046;
+	font-size: 18pt;
+	border-radius: 0;
+}
+
+/* Базовый контейнер табов */
+.tabs {
+	min-width: 320px;
+	max-width: 800px;
+	padding: 0px;
+	margin: 0 auto;
+}
+/* Стили секций с содержанием */
+.tabs>section {
+	display: none;
+	padding: 15px;
+	background: #fff;
+	border: 1px solid #ddd;
+}
+.tabs>section>p {
+	margin: 0 0 5px;
+	line-height: 1.5;
+	color: #383838;
+	/* прикрутим анимацию */
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+}
+/* Описываем анимацию свойства opacity */
+ 
+@-webkit-keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+/* Прячем чекбоксы */
+.tabs>input {
+	display: none;
+	position: absolute;
+}
+/* Стили переключателей вкладок (табов) */
+.tabs>label {
+	display: inline-block;
+	margin: 0 0 -1px;
+	padding: 15px 25px;
+	font-weight: 600;
+	text-align: center;
+	color: #aaa;
+	border: 0px solid #ddd;
+	border-width: 1px 1px 1px 1px;
+	background: #f1f1f1;
+	border-radius: 3px 3px 0 0;
+}
+/* Шрифт-иконки от Font Awesome в формате Unicode */
+.tabs>label:before {
+	font-family: fontawesome;
+	font-weight: normal;
+	margin-right: 10px;
+}
+.tabs>label[for*="1"]:before {
+	content: "\f19a";
+}
+.tabs>label[for*="2"]:before {
+	content: "\f17a";
+}
+.tabs>label[for*="3"]:before {
+	content: "\f13b";
+}
+.tabs>label[for*="4"]:before {
+	content: "\f13c";
+}
+/* Изменения стиля переключателей вкладок при наведении */
+ 
+.tabs>label:hover {
+	color: #888;
+	cursor: pointer;
+}
+/* Стили для активной вкладки */
+.tabs>input:checked+label {
+	color: #555;
+	border-top: 1px solid #009933;
+	border-bottom: 1px solid #fff;
+	background: #fff;
+}
+/* Активация секций с помощью псевдокласса :checked */
+#tab1:checked~#content-tab1, #tab2:checked~#content-tab2, #tab3:checked~#content-tab3, #tab4:checked~#content-tab4 {
+	display: block;
+}
+/* Убираем текст с переключателей 
+* и оставляем иконки на малых экранах
+*/
+ 
+@media screen and (max-width: 680px) {
+	.tabs>label {
+		font-size: 0;
+	}
+	.tabs>label:before {
+		margin: 0;
+		font-size: 18px;
+	}
+}
+/* Изменяем внутренние отступы 
+*  переключателей для малых экранов
+*/
+@media screen and (max-width: 400px) {
+	.tabs>label {
+		padding: 15px;
+	}

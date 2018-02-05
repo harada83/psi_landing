@@ -20,10 +20,13 @@
     <!-- Custom styles for this template -->
     <link href="../Olga/css/landing.css" rel="stylesheet">
 
+    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+
+
   </head>
 
   <body>
-  	<div class="container-fluid">
+  	<div class="container-fluid top">
   		<div class="row">
   			<div class="title">
   				<div class="text font-weight-bold">
@@ -42,32 +45,161 @@
 				</div>
 			</div>
 			<div class="row">
-	  			<div class="col-sm avatar">
+	  			<div class="col-sm-4 avatar">
 	  				<img src="../Olga/img/avatar1.jpg" alt="" id="foto">
 	  			</div>
-	  			<div class="col-sm" id="self">
+	  			<div class="col-sm-8" id="self">
 	  				<p>Меня зовут Ольга Чиж. Я психолог, психотерапевт, сценарист новой реальности. Поддерживаю в осознанном прохождении кризиса среднего возраста. Открываю двери в счастливую вторую половину жизни. Ваша зрелость будет такой, что молодость позавидует.</p>
 	  			</div>
 	  		</div>	
 		</div>	
 	</section>
 	<section>
-		<div class="container">
-			<div class="row description">
+		<div class="container description otstup" >
+			<div class="row otstup">
 				<p class="font-weight-bold">
 					Программа рассчитана на 4 месяца, рассылки по понедельникам, присоединиться можно в любое время. Я предлагаю 3 различных варианта программы.	
 				</p>
 			</div>
-			<div class="row description">
-				<!-- <div class="description "> -->
-					<br>
-					<p class="font-weight-bold">
-						ВАРИНТЫ УЧАСТИЯ В ПРОГРАММЕ
-					</p>
-				<!-- </div> -->
+		</div>
+		<div class="container description otstup" >
+			<div class="row otstup">
+				<p class="font-weight-bold" id="ttt">
+					ВАРИАНТЫ УЧАСТИЯ В ПРОГРАММЕ<br>																	                	
+				</p>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm font-weight-bold white" id="first">
+					<p>Еженедельная рассылка с заданиями и поддерживающими упражнениями на развитие различных ресурсов (16 недель)</p>
+					<button type="button" class="btn">Basic</button>
+					<button type="button" class="btn btn-default">Default</button>
+					<button type="button" class="btn btn-primary">Primary</button>
+					<button type="button" class="btn btn-success">Success</button>
+					<button type="button" class="btn btn-info">Info</button>
+					<button type="button" class="btn btn-warning">Warning</button>
+					<button type="button" class="btn btn-danger">Danger</button>
+					<button type="button" class="btn btn-link">Link</button>
+				</div>
+				<div class="col-sm font-weight-bold white" id="second">
+					<p>Еженедельная рассылка с заданиями и поддерживающими упражнениями на развитие различных ресурсов (16 недель)</p>
+					<button type="button" class="btn">Basic</button>
+					<button type="button" class="btn btn-default">Default</button>
+					<button type="button" class="btn btn-primary">Primary</button>
+					<button type="button" class="btn btn-success">Success</button>
+					<button type="button" class="btn btn-info">Info</button>
+					<button type="button" class="btn btn-warning">Warning</button>
+					<button type="button" class="btn btn-danger">Danger</button>
+					<button type="button" class="btn btn-link">Link</button>
+				</div>
+				<div class="col-sm font-weight-bold white" id="third">
+					<p>Еженедельная рассылка с заданиями и поддерживающими упражнениями на развитие различных ресурсов (16 недель)</p>
+					<button type="button" class="btn">Basic</button>
+					<button type="button" class="btn btn-default">Default</button>
+					<button type="button" class="btn btn-primary">Primary</button>
+					<button type="button" class="btn btn-success">Success</button>
+					<button type="button" class="btn btn-info">Info</button>
+					<button type="button" class="btn btn-warning">Warning</button>
+					<button type="button" class="btn btn-danger">Danger</button>
+					<button type="button" class="btn btn-link">Link</button>
+				</div>
 			</div>
 		</div>
 	</section>
+	<br>
+	<br>
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="white" id="four">
+					<p class="font-weight-bold">Расписание вебинаров для тех, кто присоединится в октябре:
+<br>
+1 вебинар «Темная ночь души. Горькие осознавания. Что хочется изменить. Страхи и критики» — 5 марта 2018 г. в 20-00
+<br>
+2 вебинар «Лучи 1. Внутренние и личные ресурсы» — 2 апреля 2018 г. в 20-00
+<br>
+3 вебинар «Лучи 2. Внешние ресурсы. Знаки и сигналы мира» — 30 апреля 2018 г. в 20-00
+<br>
+4 вебинар «Рассвет. Новая жизнь»- 28 мая 2018 г. в 20-00.
+<br>
+Насчет времени индивидуальных сессий договариваемся по почте psyona@yandex.ru.
+</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="container description otstup">
+			<p class="font-weight-bold" id="otzyv">ОТЗЫВЫ УЧАСТНИКОВ</p>
+		</div>
+		<div class="tabs">
+		    <input id="tab1" type="radio" name="tabs" checked>
+		    <label for="tab1" title="Вкладка 1">Вкладка 1</label>
+		 
+		    <input id="tab2" type="radio" name="tabs">
+		    <label for="tab2" title="Вкладка 2">Вкладка 2</label>
+		 
+		    <input id="tab3" type="radio" name="tabs">
+		    <label for="tab3" title="Вкладка 3">Вкладка 3</label>
+		 
+		    <input id="tab4" type="radio" name="tabs">
+		    <label for="tab4" title="Вкладка 4">Вкладка 4</label>
+		 
+		    <section id="content-tab1">
+		        <p>
+				Вашу рассылку я распечатываю, отмечаю маркером ключевые для себя вещи, жму актуальные для себя пусковые кнопки. ..Ваш процесс вдохновил на то, чтобы оживить горы своих заметок и наблюдений про кризисную тематику. Почему бы и не превратить это тоже в программный продукт?... Актуализируется и личное, и профессиональное. Не отпускаю мысли о возвращении в психологию после паузы. Материала накоплено много. Еще раз "пробегусь" и пособираю все свои "ключи"... Мой процесс "доставания" себя из пыльного сундука длится уже месяцев пять, и я не останавливаюсь, я делаю паузы, с удовольствием открываю для себя новые темы и новых людей. .. Весь контент, в котором я выбрала для себя вариться, постепенно доводит меня и мои блюда до кондиции)) Я еще не собрала паззл из миллиона деталей, но, чтоб не ждать финала в своем пустом зрительном зале, положила начало блогу под уютным для меня псевдонимом, который органично появился на свет 10 лет назад, когда я работала арт-директором ночного клуба))) Лара Д'Арт.
+		        </p>
+		    </section>  
+		    <section id="content-tab2">
+		        <p>
+		          Вашу рассылку я распечатываю, отмечаю маркером ключевые для себя вещи, жму актуальные для себя пусковые кнопки. ..Ваш процесс вдохновил на то, чтобы оживить горы своих заметок и наблюдений про кризисную тематику. Почему бы и не превратить это тоже в программный продукт?... Актуализируется и личное, и профессиональное. Не отпускаю мысли о возвращении в психологию после паузы. Материала накоплено много. Еще раз "пробегусь" и пособираю все свои "ключи"... Мой процесс "доставания" себя из пыльного сундука длится уже месяцев пять, и я не останавливаюсь, я делаю паузы, с удовольствием открываю для себя новые темы и новых людей. .. Весь контент, в котором я выбрала для себя вариться, постепенно доводит меня и мои блюда до кондиции)) Я еще не собрала паззл из миллиона деталей, но, чтоб не ждать финала в своем пустом зрительном зале, положила начало блогу под уютным для меня псевдонимом, который органично появился на свет 10 лет назад, когда я работала арт-директором ночного клуба))) Лара Д'Арт.
+		        </p>
+		    </section> 
+		    <section id="content-tab3">
+		        <p>
+		          Вашу рассылку я распечатываю, отмечаю маркером ключевые для себя вещи, жму актуальные для себя пусковые кнопки. ..Ваш процесс вдохновил на то, чтобы оживить горы своих заметок и наблюдений про кризисную тематику. Почему бы и не превратить это тоже в программный продукт?... Актуализируется и личное, и профессиональное. Не отпускаю мысли о возвращении в психологию после паузы. Материала накоплено много. Еще раз "пробегусь" и пособираю все свои "ключи"... Мой процесс "доставания" себя из пыльного сундука длится уже месяцев пять, и я не останавливаюсь, я делаю паузы, с удовольствием открываю для себя новые темы и новых людей. .. Весь контент, в котором я выбрала для себя вариться, постепенно доводит меня и мои блюда до кондиции)) Я еще не собрала паззл из миллиона деталей, но, чтоб не ждать финала в своем пустом зрительном зале, положила начало блогу под уютным для меня псевдонимом, который органично появился на свет 10 лет назад, когда я работала арт-директором ночного клуба))) Лара Д'Арт.
+				</p>
+		    </section> 
+		    <section id="content-tab4">
+		        <p>
+		          Вашу рассылку я распечатываю, отмечаю маркером ключевые для себя вещи, жму актуальные для себя пусковые кнопки. ..Ваш процесс вдохновил на то, чтобы оживить горы своих заметок и наблюдений про кризисную тематику. Почему бы и не превратить это тоже в программный продукт?... Актуализируется и личное, и профессиональное. Не отпускаю мысли о возвращении в психологию после паузы. Материала накоплено много. Еще раз "пробегусь" и пособираю все свои "ключи"... Мой процесс "доставания" себя из пыльного сундука длится уже месяцев пять, и я не останавливаюсь, я делаю паузы, с удовольствием открываю для себя новые темы и новых людей. .. Весь контент, в котором я выбрала для себя вариться, постепенно доводит меня и мои блюда до кондиции)) Я еще не собрала паззл из миллиона деталей, но, чтоб не ждать финала в своем пустом зрительном зале, положила начало блогу под уютным для меня псевдонимом, который органично появился на свет 10 лет назад, когда я работала арт-директором ночного клуба))) Лара Д'Арт.
+		        </p>
+		    </section>    
+		</div>
+	</section>
+	<div class="container otstup">
+		<button type="button" class="btn">Basic</button>
+		<button type="button" class="btn btn-default">Default</button>
+		<button type="button" class="btn btn-primary">Primary</button>
+		<button type="button" class="btn btn-success">Success</button>
+		<button type="button" class="btn btn-info">Info</button>
+		<button type="button" class="btn btn-warning">Warning</button>
+		<button type="button" class="btn btn-danger">Danger</button>
+		<button type="button" class="btn btn-link">Link</button>
+	</div>
+	<div class="container-fluid description white footer">
+		<div class="container">
+			<p class="font-weight-bold ">
+				Политика конфиденциальности
+			</p>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm left">
+					<p class="font-weight-bold">
+						2018 год Ольга Чиж &copy
+					</p>
+				</div>
+				<div class="col-sm right">
+					<p class="font-weight-bold">
+						info@magiclick.online
+					</p>
+				</div>
+			</div>
+			
+		</div>
+	</div>
 	
 
   </body>
