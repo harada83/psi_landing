@@ -18,6 +18,9 @@ body {
 	font-family: 'Open Sans Condensed', sans-serif;
 	line-height: 1.5;
 }
+/*.container {
+	display: flex;
+}*/
 .top {
 	background: url("../img/bat4landing.jpg") 100% 100% no-repeat;
 	background-size: cover;
@@ -229,3 +232,11 @@ body {
 	.tabs>label {
 		padding: 15px;
 	}
+.oplata {
+	/*text-align: center;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	font-weight: bold;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
